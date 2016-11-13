@@ -140,3 +140,26 @@
 32) difference between Truncate and Drop?
 	Truncate will remove all the records in a table and the table structure remains unchanged.
 	Drop will remove the table from the database. both the commands can't be roll-back.
+	
+33) how to add a column to an existing table?
+	alter table emp add address varchar(100);
+
+34) how to delete a column to an existing table?
+	alter table emp drop column address 
+	
+35) what is default constraint?
+	default constraint are set at column level. this constraint will set the default value to the record if we haven't provided the data for that particular column on which the default constraint sets.
+	
+	ex: alter table emp alter column salary set default '10000'
+	
+	the  above query will set the default emp salary to 10000. when you adding a new employee to table the default value to salary column in 10000.
+
+36) what is check constraint?
+	Check constraint used to check for some condition before the value get inserted into an column.
+	the check constraint works like a "IF" condition in programming. It limits the data range.
+	
+	ex: alter table emp add constraint chk check age<40;
+	
+	the above query let you to insert data in age column only when the age is lesser than 40.
+	
+37) 
