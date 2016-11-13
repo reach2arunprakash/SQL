@@ -162,4 +162,17 @@
 	
 	the above query let you to insert data in age column only when the age is lesser than 40.
 	
-37) 
+37) what is not null constraint?
+	if the column is set to not null constraint, then the column must have value it won't accept null value.
+	
+38) what is unique constraint?
+	unique constraint make sure that each row of a column must have a unique value that make the record unique.
+	
+39) how to declare a variable in sql server/
+	declare @my_var varchar(10) = null
+	
+	in the above line, I've declared a variable called @my_var which is of type varchar which has 10 byte of memory and I set default to null.
+	
+40) what are the mode of authentications in SQL server?
+	Windows authentications and SQL server authentications.
+	
